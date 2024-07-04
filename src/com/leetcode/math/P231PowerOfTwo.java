@@ -8,6 +8,7 @@ package com.leetcode.math;
  * 1. negative numbers are not power of 2 i.e. they cannot be represented as 2^x
  * 2. (n & n - 1) is an effective way to remove trailing 1s
  * 3. 8-bit unsigned integer 0 to 255
+ * Level:Easy
  */
 public class P231PowerOfTwo {
     public static boolean isPowerOfTwo(int n) {
