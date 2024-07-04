@@ -36,6 +36,7 @@ package com.leetcode.dp;
  * <p>
  * 2 <= cost.length <= 1000
  * 0 <= cost[i] <= 999
+ * Level:Easy
  */
 public class P746MinCostClimbingStairs {
 
