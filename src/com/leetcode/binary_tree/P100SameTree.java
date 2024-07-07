@@ -1,4 +1,4 @@
-package com.leetcode.tree;
+package com.leetcode.binary_tree;
 
 /**
  * 100. Same Tree
