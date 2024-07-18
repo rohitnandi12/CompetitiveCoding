@@ -14,7 +14,7 @@ class ListNode:
         self.val = x
         self.next = None
 
-class Solution:
+class P141LinkedListCycle:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
 
         if not head or not head.next:
