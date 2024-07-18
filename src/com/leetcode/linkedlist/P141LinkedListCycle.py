@@ -8,7 +8,7 @@ There is a cycle in a linked list if there is some node in the list that can be 
 Return true if there is a cycle in the linked list. Otherwise, return false.
 Leve:Easy
 """
-
+from typing import Optional
 class ListNode:
     def __init__(self, x):
         self.val = x
