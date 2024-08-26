@@ -1,4 +1,4 @@
-package com.scaler.array.prefixsum
+package com.scaler.prefixsum
 
 object CountingSubArraysEasy {
   def main(args: Array[String]): Unit = {
