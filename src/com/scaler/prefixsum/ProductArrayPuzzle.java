@@ -1,5 +1,8 @@
 package com.scaler.prefixsum;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 /**
  * Given an array of integers A, find and return the product array of the same size where the ith element of the product array will be equal to the product of all the elements divided by the ith element of the array.
  *

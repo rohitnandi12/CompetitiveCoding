@@ -1,5 +1,7 @@
 package com.scaler.prefixsum;
 
+import java.util.ArrayList;
+
 /**
  * Problem Description
  * You are given an array A of integers of size N.

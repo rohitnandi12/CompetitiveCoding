@@ -1,5 +1,6 @@
 package com.scaler.array;
 
+import java.util.ArrayList;
 /**
  * Problem Description
  * You are given an integer array A.

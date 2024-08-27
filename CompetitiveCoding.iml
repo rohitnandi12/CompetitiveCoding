@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="net.jpountz.lz4" level="project" />
+    <orderEntry type="library" name="commons.codec" level="project" />
   </component>
 </module>

@@ -1,7 +1,15 @@
 package com.scaler.array;
 
+import java.util.List;
+
 public class AbsoluteMaximum {
-    public int solve(ArrayList<Integer> A, ArrayList<Integer> B, ArrayList<Integer> C, ArrayList<Integer> D) {
+
+    public static void main(String[] args) {
+
+        int result = solve(List.of(1,2), List.of(3,4), List.of(5,6), List.of(7,8));
+        System.out.println(result);
+    }
+    public static int solve(List<Integer> A, List<Integer> B, List<Integer> C, List<Integer> D) {
         int N = A.size();
         int res = Integer.MIN_VALUE;
 

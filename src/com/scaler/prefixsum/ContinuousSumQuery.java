@@ -1,5 +1,8 @@
 package com.scaler.prefixsum;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  * Problem Description
  * There are A beggars sitting in a row outside a temple. Each beggar initially has an empty pot. When the devotees come to the temple, they donate some amount of coins to these beggars. Each devotee gives a fixed amount of coin(according to their faith and ability) to some K beggars sitting next to each other.
