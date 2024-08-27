@@ -1,5 +1,7 @@
 package com.scaler.kadanes;
 
+import java.util.ArrayList;
+
 /**
  * Problem Description
  * You are given a binary string A(i.e., with characters 0 and 1) consisting of characters A1, A2, ..., AN. In a single operation, you can choose two indices, L and R, such that 1 ≤ L ≤ R ≤ N and flip the characters AL, AL+1, ..., AR. By flipping, we mean changing character 0 to 1 and vice-versa.
@@ -64,4 +66,42 @@ package com.scaler.kadanes;
  * No operation can give us more than three 1s in final string. So, we return empty array [].
  */
 public class Flip {
+    public ArrayList<Integer> flip(String A) {
+
+        ArrayList<Integer> ans = new ArrayList<>();
+        int start = 0;
+        int end = -1;
+        int maxRangeLength = 0;
+        int currentRangeLength = 0;
+        int L = -1;
+        int R = -1;
+
+        for(int i=0; i<A.length(); i++) {
+            if(A.charAt(i) == '0') {
+                currentRangeLength += 1;
+                // if(currentRangeLength == 1) {
+                //     start = i;
+                // }
+                end = i;
+                if(currentRangeLength > maxRangeLength) {
+                    L = start;
+                    R = end;
+                    maxRangeLength = currentRangeLength;
+                }
+            } else {
+                currentRangeLength -= 1;
+                if(currentRangeLength == -1) {
+                    start = i + 1;
+                }
+                currentRangeLength = Math.max(0, currentRangeLength);
+            }
+        }
+
+        if(L != -1) {
+            ans.add(L+1);
+            ans.add(R+1);
+        }
+
+        return ans;
+    }
 }
